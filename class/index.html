@@ -6,10 +6,18 @@
     <title>second class</title>
 </head>
 <body>
-    <h1>My list</h1>
+    <h1 style="background-color: red; color: white; text-align: center;">My list</h1>
+    <a href="index.html">Home</a><br>
+    <a href="contact.html">Contact</a>
     <h4>Unordered list</h4>
     <ul>
-        <li>Item 1</li>
+        <li>Item 1
+            <ol>
+                <li>inner item 1</li>
+                <li>inner item 2</li>
+                <li>inner item 3</li>
+            </ol>
+        </li>
         <li>Item 2</li>
         <li>Item 3</li>
         <li>Item 4</li>
@@ -28,5 +36,71 @@
         <dd>Item 1</dd>
         <dd>Item 2</dd>
     </dl>
+    <p>
+        A town hall different from <b>bala blu</b>, 
+        blue blu bulaba. <i>broom broom broom brooooooooom</i>. 
+        <strong>Bala blu blue blu bulaba</strong>. The farmers will make more money. 
+        Your lunch will not be <em>imported</em>, cassava garri ewa and ehhh 
+        ehhhhnn. The farmer will make money, 
+        the dinner would be cassava, <sub>eba</sub>, <sup>ewa</sup> and everything.
+    </p>
+    <!-- <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 1px solid black;">S/N</th>
+            <th style="border: 1px solid black;">Name</th>
+            <th style="border: 1px solid black;">Phone Number</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Emmanuel</td>
+            <td style="border: 1px solid black;">08066332277</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Emmanuel</td>
+            <td style="border: 1px solid black;">08066332277</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Emmanuel</td>
+            <td style="border: 1px solid black;">08066332277</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Emmanuel</td>
+            <td style="border: 1px solid black;">08066332277</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">5</td>
+            <td style="border: 1px solid black;">Emmanuel</td>
+            <td style="border: 1px solid black;">08066332277</td>
+        </tr>
+    </table> -->
+    <div id="demo">
+        <div id="my-text"></div>
+        <button id="text-me" onclick="myFunction()">Text Me</button>
+        <!-- <button onclick="removeFunction()">Remove text</button> -->
+        <div id="solve">
+            <button type="button" onclick="document.write(5 + 6)">Try it</button>
+        </div>
+    </div>
+    <script>
+        //document.getElementById("demo").innerText = "Hello JavaScript";
+        //document.getElementById("demo").style.fontSize = "50px";
+        
+        function myFunction(){
+            //console.log("Hello, world");
+            //alert("Hello, world");
+            if(document.getElementById("my-text").innerText === ""){
+                document.getElementById("my-text").innerText = "You press the button";
+            }else{
+                document.getElementById("my-text").innerText = "";
+            }
+        }
+        //document.getElementById("demo").style.display = "none";
+        function removeFunction(){
+            document.getElementById("my-text").innerText = "";
+        }
+    </script>
 </body>
 </html>
