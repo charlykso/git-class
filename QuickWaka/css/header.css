@@ -14,10 +14,8 @@
     display: flex;
     height: 100px;
     align-items: center;
-    /* background-color: blueviolet; */
     opacity: 1;
     gap: 2rem;
-    /* padding: 0px 20px; */
     box-shadow: 0px 3px 6px #00000029;
 }
 .logo img{
@@ -101,4 +99,56 @@ div.menu{
     width: 100%;
     height: 100%;
     text-align: center;
+}
+.hide{
+    opacity: 0;
+    display: none;
+}
+.add-nav.show{
+    display: block;
+    opacity: 1;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+    transition: width 4.5s ease-in-out;
+}
+
+.show ul{
+    width: 100%;
+    padding: 5px 25px;
+}
+.show ul li{
+    list-style-type: none;
+    width: 100%;
+    margin: 7px 0px;
+}
+.show ul li a{
+    color: #000;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    width: 100% ;
+}
+.show ul li a:hover{
+    background-color: #ff8000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+@media (max-width: 880px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .search, .account{
+        display: none;
+    }
+    .menu>i{
+        display: block;
+        cursor: pointer;
+    }
 }
