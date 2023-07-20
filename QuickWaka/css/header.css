@@ -1,35 +1,104 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('ttf');
+    font-family: 'Poppins-Light';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('ttf');
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins/Poppins-Medium.ttf') format('ttf');
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('ttf');
+    /* Add more font properties if needed */
+}
 .header{
     width: 100%;
     display: flex;
-    height: 201px;
+    height: 100px;
     align-items: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     opacity: 1;
+    gap: 2rem;
+    /* padding: 0px 20px; */
+    box-shadow: 0px 3px 6px #00000029;
 }
 .logo img{
-    width: 303px;
-    height: 47px;
-}
-.account{
-    display: flex;
+    width: 150px;
+    height: 25px;
 }
 .search{
-    width: 665px;
+    width: 550px;
+    display: flex;
+    flex-wrap: nowrap !important;
+    /* background-color: red; */
+    gap: 0.3rem;
+    justify-content: space-between;
+    height: 35px;
 }
 .search-first{
     display: flex;
     align-items: center;
+    flex-basis: 90%;
+}
+.search-button{
+    width: auto;
+}
+.search-button button{
+    background-color: #ff8000;
+    padding: 4px 30px;
+    border-radius: 5px;
+    height: 100%;
+    border: none;
+}
+.search-button button:hover{
+    background-color: #707070;
+    color: #fff;
 }
 .search-first img{
-    width: 37px;
-    height: 37px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     z-index: 10;
     margin-left: 10px ;
 }
 .search-input{
     width: 665px;
-    height: 62px;
-    border-radius: 9px !important;
-    padding-left: 60px !important;
+    height: 100%;
+    border-radius: 5px !important;
+    padding-left: 50px !important;
+    border: 2px solid #707070;
+    opacity: 1;
+}
+.account {
+    display: flex;
+    gap: 1rem;
+}
+.account a{
+    text-decoration: none;
+}
+.account a img{
+    width: 30px;
+    height: 30px;
+}
+.account a>.img-text{
+    color: #000;
+    padding-left: 10px;
+}
+div.menu{
+    display: none;
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu>i{
+    display: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #707070;
+    font-size: 35px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
