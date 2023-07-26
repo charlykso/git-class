@@ -1,0 +1,16 @@
+.container h1{
+    width: 300px;
+    border: 2px solid blueviolet;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-top: 150px;
+}
+nav{
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
