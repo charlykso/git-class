@@ -312,5 +312,10 @@
     .main{
         display: block;
     }
-
+    .sale-container{
+        overflow: scroll;
+    }
+    .buying{
+        margin-top: 10px;
+    }
 }
