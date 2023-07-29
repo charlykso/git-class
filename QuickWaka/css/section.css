@@ -318,4 +318,11 @@
     .buying{
         margin-top: 10px;
     }
+    .inside-content{
+        flex-wrap: nowrap;
+        overflow-x: scroll !important;
+    }
+    .new-row{
+        overflow-x: scroll !important;
+    }
 }
